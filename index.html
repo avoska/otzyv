@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" href="/img/crown.png" type="image/png">
+
+    <script src="js/less.js"></script>
+    <script src="js/jquery-2.2.0.js"></script>
+
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+
+    <title>Отзыв</title>
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-xs-6 col-xs-offset-3 offset_top">
+            <div class="tab-content">
+                <div id="panel1" class="tab-pane fade in active">
+                    <div class="well btn-block">
+                        <p>Ваша задача "Название задачи" отмечена как выполненная. Все ли у Вас работает, согласно поставленному заданию?</p>
+                        <p>
+                            <a data-toggle="tab" href="#panel2"><span class="btn btn-danger btn-lg">НЕТ</span></a>
+                            <a data-toggle="tab" href="#panel3"><span class="btn btn-success btn-lg">Да</span></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-content">
+                <div id="panel2" class="tab-pane fade">
+                    <div class="well btn-block">
+                        <p>Просим прощения, мы свяжемся с Вами в ближайшее время чтобы уточнить детали и устранить недочеты</p>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-content">
+                <div id="panel3" class="tab-pane fade">
+                    <div class="well btn-block">
+                        <p>Мы хотели бы узнать:
+                            <br />
+                           1. Все было выполнено в обещанное время?
+                        </p>
+
+                        <form>
+                            <div class="form-group">
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox">
+                                        Да
+                                    </label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox">
+                                        Нет
+                                    </label>
+                                </div>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    $('[data-toggle=tab]').click(function () {
+        var tab = this.hash, li = $(this).parent();
+
+        $('.tab-pane.active').fadeOut('fast')
+                .add('.active').add(li).toggleClass('active')
+                .delay(500).promise().then(function () {
+            li.hasClass('active') && $(tab).addClass('active').fadeIn();
+        });
+    });
+</script>
+
+
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
