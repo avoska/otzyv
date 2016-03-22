@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="shortcut icon" href="/img/crown.png" type="image/png">
+    <link rel="shortcut icon" href="img/icon.jpg" type="image/png">
 
     <script src="js/less.js"></script>
     <script src="js/jquery-2.2.0.js"></script>
@@ -20,15 +20,20 @@
 <body>
 <div class="container-fluid">
     <div class="row">
-        <div class="col-xs-6 col-xs-offset-3 offset_top">
+        <div class="col-xs-12 col-sm-8 col-md-6 col-lg-4  col-sm-offset-2 col-md-offset-3 col-lg-offset-4 offset_top">
             <div class="tab-content">
                 <div id="panel1" class="tab-pane fade in active">
-                    <div class="well btn-block">
-                        <p>Ваша задача "Название задачи" отмечена как выполненная. Все ли у Вас работает, согласно поставленному заданию?</p>
-                        <p>
-                            <a data-toggle="tab" href="#panel2"><span class="btn btn-danger btn-lg">НЕТ</span></a>
-                            <a data-toggle="tab" href="#panel3"><span class="btn btn-success btn-lg">Да</span></a>
-                        </p>
+                    <div class="row">
+
+                        <div class="col-xs-12" align="center">
+                            <div class="well btn-block">
+                                <p>Ваша задача "Название задачи" отмечена как выполненная. Все ли у Вас работает, согласно поставленному заданию?</p>
+                                <p>
+                                    <a data-toggle="tab" href="#panel2"><span class="btn btn-danger btn-lg">НЕТ</span></a>
+                                    <a data-toggle="tab" href="#panel3"><span class="btn btn-success btn-lg">Да</span></a>
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -42,28 +47,99 @@
             <div class="tab-content">
                 <div id="panel3" class="tab-pane fade">
                     <div class="well btn-block">
-                        <p>Мы хотели бы узнать:
-                            <br />
-                           1. Все было выполнено в обещанное время?
-                        </p>
-
                         <form>
-                            <div class="form-group">
-                                <div class="checkbox">
-                                    <label>
-                                        <input type="checkbox">
-                                        Да
-                                    </label>
+
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <p>
+                                        Мы хотели бы узнать:
+                                        <br />
+                                        1. Все было выполнено в обещанное время?
+                                    </p>
+                                    <div id="radio1" data-toggle="buttons">
+                                        <div class="radio">
+                                            <label>
+                                                <input type="radio" name="radio1" checked>
+                                                Да
+                                            </label>
+                                        </div>
+                                        <div class="radio">
+                                            <label>
+                                                <input type="radio" name="radio1">
+                                                Нет
+                                            </label>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="checkbox">
-                                    <label>
-                                        <input type="checkbox">
-                                        Нет
-                                    </label>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <p>
+                                        2. Вы заплатили
+                                    </p>
+                                    <div id="radio2" data-toggle="buttons">
+                                        <div class="radio">
+                                            <label>
+                                                <input type="radio" name="radio2" checked>
+                                                меньше
+                                            </label>
+                                        </div>
+                                        <div class="radio">
+                                            <label>
+                                                <input type="radio" name="radio2">
+                                                больше
+                                            </label>
+                                        </div>
+                                        <div class="radio">
+                                            <label>
+                                                <input type="radio" name="radio2">
+                                                столько, сколько ожидали
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <p>
+                                        3. Какова вероятность, что вы порекомендуете нас своим знакомым?
+                                        <br />
+                                        (0 – "Ни в коем случае не буду рекомендовать", 10 – "Обязательно порекомендую")
+                                    </p>
+                                    <select class="form-control">
+                                        <option>10</option>
+                                        <option>9</option>
+                                        <option>8</option>
+                                        <option>7</option>
+                                        <option>6</option>
+                                        <option>5</option>
+                                        <option>4</option>
+                                        <option>3</option>
+                                        <option>9</option>
+                                        <option>1</option>
+                                    </select>
+                                </div>
+                            </div>
+
+
+                            <div class="row">
+                                <div class="col-xs-12 offset_btn">
+                                    <p>
+                                        <button type="submit" class="btn btn-default">Отправить</button>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12 offset_btn">
+                                    <p>
+                                        БОЛЬШОЕ СПАСИБО
+                                        <br />
+                                        Будем рады всегда вам помочь
+                                    </p>
                                 </div>
                             </div>
                         </form>
-
                     </div>
                 </div>
             </div>
