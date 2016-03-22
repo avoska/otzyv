@@ -24,13 +24,19 @@
             <div class="tab-content">
                 <div id="panel1" class="tab-pane fade in active">
                     <div class="row">
-
+                        <div class="col-xs-12">
+                            <a href="http://www.h1p.ru/">
+                                <img src="img/logo.png">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
                         <div class="col-xs-12" align="center">
                             <div class="well btn-block">
-                                <p>Ваша задача "Название задачи" отмечена как выполненная. Все ли у Вас работает, согласно поставленному заданию?</p>
+                                <p class="main">Ваша задача "Название задачи" отмечена как выполненная. Все ли у Вас работает, согласно поставленному заданию?</p>
                                 <p>
-                                    <a data-toggle="tab" href="#panel2"><span class="btn btn-danger btn-lg">НЕТ</span></a>
-                                    <a data-toggle="tab" href="#panel3"><span class="btn btn-success btn-lg">Да</span></a>
+                                    <a data-toggle="tab" href="#panel2"><span class="btn btn-danger red_bg  btn-lg">Нет</span></a>
+                                    <a data-toggle="tab" href="#panel3"><span class="btn btn-success green_bg btn-lg">Да</span></a>
                                 </p>
                             </div>
                         </div>
@@ -39,34 +45,47 @@
             </div>
             <div class="tab-content">
                 <div id="panel2" class="tab-pane fade">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <a href="http://www.h1p.ru/">
+                                <img src="img/logo.png">
+                            </a>
+                        </div>
+                    </div>
                     <div class="well btn-block">
-                        <p>Просим прощения, мы свяжемся с Вами в ближайшее время чтобы уточнить детали и устранить недочеты</p>
+                        <p class="header">Просим прощения, мы свяжемся с Вами в ближайшее время чтобы уточнить детали и устранить недочеты</p>
                     </div>
                 </div>
             </div>
             <div class="tab-content">
                 <div id="panel3" class="tab-pane fade">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <a href="http://www.h1p.ru/">
+                                <img src="img/logo.png">
+                            </a>
+                        </div>
+                    </div>
                     <div class="well btn-block">
                         <form>
-
                             <div class="row">
                                 <div class="col-xs-12">
-                                    <p>
+                                    <p class="header">
                                         Мы хотели бы узнать:
                                         <br />
                                         1. Все было выполнено в обещанное время?
                                     </p>
                                     <div id="radio1" data-toggle="buttons">
-                                        <div class="radio">
+                                        <div class="radio answer">
                                             <label>
                                                 <input type="radio" name="radio1" checked>
-                                                Да
+                                                <span class="answer">Да</span>
                                             </label>
                                         </div>
-                                        <div class="radio">
+                                        <div class="radio answer">
                                             <label>
                                                 <input type="radio" name="radio1">
-                                                Нет
+                                                <span class="answer">Нет</span>
                                             </label>
                                         </div>
                                     </div>
@@ -75,26 +94,26 @@
 
                             <div class="row">
                                 <div class="col-xs-12">
-                                    <p>
+                                    <p class="header">
                                         2. Вы заплатили
                                     </p>
                                     <div id="radio2" data-toggle="buttons">
-                                        <div class="radio">
+                                        <div class="radio answer">
                                             <label>
                                                 <input type="radio" name="radio2" checked>
-                                                меньше
+                                                <span class="answer">Меньше</span>
+                                            </label>
+                                        </div>
+                                        <div class="radio answer">
+                                            <label>
+                                                <input type="radio" name="radio2">
+                                                <span class="answer">Больше</span>
                                             </label>
                                         </div>
                                         <div class="radio">
                                             <label>
                                                 <input type="radio" name="radio2">
-                                                больше
-                                            </label>
-                                        </div>
-                                        <div class="radio">
-                                            <label>
-                                                <input type="radio" name="radio2">
-                                                столько, сколько ожидали
+                                                <span class="answer">Столько, сколько ожидали</span>
                                             </label>
                                         </div>
                                     </div>
@@ -102,22 +121,22 @@
                             </div>
                             <div class="row">
                                 <div class="col-xs-12">
-                                    <p>
+                                    <p class="header">
                                         3. Какова вероятность, что вы порекомендуете нас своим знакомым?
                                         <br />
                                         (0 – "Ни в коем случае не буду рекомендовать", 10 – "Обязательно порекомендую")
                                     </p>
                                     <select class="form-control">
-                                        <option>10</option>
-                                        <option>9</option>
-                                        <option>8</option>
-                                        <option>7</option>
-                                        <option>6</option>
-                                        <option>5</option>
-                                        <option>4</option>
-                                        <option>3</option>
-                                        <option>9</option>
-                                        <option>1</option>
+                                        <option class="answer">10</option>
+                                        <option class="answer">9</option>
+                                        <option class="answer">8</option>
+                                        <option class="answer">7</option>
+                                        <option class="answer">6</option>
+                                        <option class="answer">5</option>
+                                        <option class="answer">4</option>
+                                        <option class="answer">3</option>
+                                        <option class="answer">9</option>
+                                        <option class="answer">1</option>
                                     </select>
                                 </div>
                             </div>
@@ -126,13 +145,13 @@
                             <div class="row">
                                 <div class="col-xs-12 offset_btn">
                                     <p>
-                                        <button type="submit" class="btn btn-default">Отправить</button>
+                                        <button type="submit" class="btn btn-success green_bg">Отправить</button>
                                     </p>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-xs-12 offset_btn">
-                                    <p>
+                                    <p class="header">
                                         БОЛЬШОЕ СПАСИБО
                                         <br />
                                         Будем рады всегда вам помочь
