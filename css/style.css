@@ -7,7 +7,7 @@
 }
 
 .green_bg {
-	background-color: #b0c800;
+	background-color: #91A504;
 }
 
 .red_bg {
@@ -23,7 +23,7 @@
 }
 
 .header {
-	color: #b0c800;
+	color: #91A504;
 	font-family: Arial;
 	font-weight: 600;
 	font-size: 1.3em;
@@ -38,11 +38,13 @@
 .main {
 	font-family: Arial;
 	font-weight: 600;
-	color: #b0c800;
+	color: #91A504;
 	font-size: 1.3em;
 }
 
 .well {
+	padding: 6vh;
+	border-radius: 0;
 	background-color: white;
 	border-color: black
 }
