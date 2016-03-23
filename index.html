@@ -24,7 +24,7 @@
                     <div class="row">
                         <div class="col-xs-12">
                             <a href="http://www.h1p.ru/">
-                                <img src="img/logo.png">
+                                <img class="logo" src="img/logo.png">
                             </a>
                         </div>
                     </div>
@@ -46,7 +46,7 @@
                     <div class="row">
                         <div class="col-xs-12">
                             <a href="http://www.h1p.ru/">
-                                <img src="img/logo.png">
+                                <img class="logo" src="img/logo.png">
                             </a>
                         </div>
                     </div>
@@ -59,8 +59,8 @@
                 <div id="panel3" class="tab-pane fade">
                     <div class="row">
                         <div class="col-xs-12">
-                            <a href="http://www.h1p.ru/">
-                                <img src="img/logo.png">
+                            <a class="logo" href="http://www.h1p.ru/">
+                                <img class="logo" src="img/logo.png">
                             </a>
                         </div>
                     </div>
@@ -73,17 +73,17 @@
                                         <br />
                                         1. Все было выполнено в обещанное время?
                                     </p>
-                                    <div id="radio1" data-toggle="buttons">
-                                        <div class="radio answer">
+                                    <div id="radio1">
+                                        <div class="radio">
                                             <label>
-                                                <input type="radio" name="radio1" checked>
-                                                <span class="answer">Да</span>
+                                                <input type="radio" name="radio1" id="yes" value="option2" checked>
+                                                Да
                                             </label>
                                         </div>
-                                        <div class="radio answer">
+                                        <div class="radio">
                                             <label>
-                                                <input type="radio" name="radio1">
-                                                <span class="answer">Нет</span>
+                                                <input type="radio" name="radio1" id="no" value="option2">
+                                                Нет
                                             </label>
                                         </div>
                                     </div>
@@ -95,23 +95,24 @@
                                     <p class="header">
                                         2. Вы заплатили
                                     </p>
-                                    <div id="radio2" data-toggle="buttons">
-                                        <div class="radio answer">
+
+                                    <div id="radio2">
+                                        <div class="radio">
                                             <label>
-                                                <input type="radio" name="radio2" checked>
-                                                <span class="answer">Меньше</span>
-                                            </label>
-                                        </div>
-                                        <div class="radio answer">
-                                            <label>
-                                                <input type="radio" name="radio2">
-                                                <span class="answer">Больше</span>
+                                                <input type="radio" name="radio2" id="lower" value="option2" checked>
+                                                Меньше
                                             </label>
                                         </div>
                                         <div class="radio">
                                             <label>
-                                                <input type="radio" name="radio2">
-                                                <span class="answer">Столько, сколько ожидали</span>
+                                                <input type="radio" name="radio2" id="higher" value="option2">
+                                                Больше
+                                            </label>
+                                        </div>
+                                        <div class="radio">
+                                            <label>
+                                                <input type="radio" name="radio2" id="normal" value="option2">
+                                                Столько, сколько планировал
                                             </label>
                                         </div>
                                     </div>
@@ -137,15 +138,16 @@
                                     </select>
                                 </div>
                             </div>
-                            <div class="row">
-                                <div class="col-xs-12 offset_btn">
-                                    <p>
-                                        <a href="#panel4" data-toggle="tab">
-                                            <button type="submit" class="btn btn-success green_bg">Отправить</button>
-                                        </a>
-                                    </p>
-                                </div>
+                        </form>
+                        <div class="row">
+                            <div class="col-xs-12 offset_btn">
+                                <p>
+                                    <a href="#panel4" data-toggle="tab">
+                                        <button type="submit" class="btn btn-success green_bg">Отправить</button>
+                                    </a>
+                                </p>
                             </div>
+                        </div>
                         </form>
                     </div>
                 </div>
